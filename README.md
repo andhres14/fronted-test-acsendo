@@ -32,6 +32,8 @@ a continuación la funcion requerida.
 
 ![alt text](./src/assets/images/logic-test-3.png)
 
+## Instalación de Dependencias
+Run `npm install`
 
 ## Development server
 

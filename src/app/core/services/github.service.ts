@@ -17,7 +17,9 @@ export class GithubService {
   constructor(private http: HttpClient) {
   }
 
-  /*
+  /**
+   * Servicio encargado de obtener los usuarios de la API de github
+   * @param filter termino de busqueda
    */
   getGithubUsersByFilter(filter?: string): Observable<GithubUserModel[]> {
     const params = new HttpParams()

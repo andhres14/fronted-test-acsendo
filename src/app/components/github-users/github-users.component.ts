@@ -1,8 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { GithubService } from "../../core/services/github.service";
 import { GithubUserModel } from "../../core/models/github-user.model";
-import { debounceTime, distinctUntilChanged, filter, fromEvent, map } from "rxjs";
-import Swal from 'sweetalert2'
+import { debounceTime, distinctUntilChanged, fromEvent, map } from "rxjs";
 
 @Component({
   selector: 'app-github-users',
