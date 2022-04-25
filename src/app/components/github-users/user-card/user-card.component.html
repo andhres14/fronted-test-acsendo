@@ -1,0 +1,20 @@
+<div class="card card-custom">
+  <img [src]="user.avatar_url" class="card-img-top" [alt]="user.login">
+  <div class="card-body text-center">
+    <span class="card-title">{{ user.login }}</span><br>
+    <span class="badge bg-success">
+      <i class="fa fa-users" aria-hidden="true"></i>
+      Tipo: {{ user.type }}
+    </span><br>
+    <span class="badge bg-primary">
+      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      Score: {{ user.score }}
+    </span><br>
+    <span class="badge bg-dark">
+      <i class="fa fa-clock-o" aria-hidden="true"></i>
+      Precisión: {{ user.score | score }}</span>
+    <br><br>
+    <a [href]="user.html_url" target="_blank"
+       class="btn btn-secondary w-100" title="Ver perfil"><i class="fa fa-github" aria-hidden="true"></i></a>
+  </div>
+</div>
